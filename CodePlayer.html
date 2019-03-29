@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+        
+        <link href="jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+
+    </head>
+    <body>
+        
+        <div id="topBar">
+            <p id="title">Code Player</p>
+            <div id="buttonsContainer">
+                <button id="clearButton">Clear</button>
+                <button class="toggleButton buttonToggled" id="htmlButton" for="htmlBox">HTML</button>
+                <button class="toggleButton buttonToggled" id="cssButton" for="cssBox">CSS</button>
+                <button class="toggleButton buttonToggled" id="jsButton" for="jsBox">JS</button>
+                <button class="toggleButton buttonToggled" id="outputButton" for="outputBox">Output</button>
+                <button class="toggleButton" id="runButton">Run</button>
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div id = "wrapper">
+            <textarea class = "typeBox" id="htmlBox"><button id="btn">Hello World!</button></textarea>
+            <textarea  class = " typeBox" id="cssBox">#btn { padding: 20px; background-color: red; font-weight: bold; }</textarea>
+            <textarea  class = " typeBox" id="jsBox">document.getElementById("btn").onclick = function () {alert("Hello world!")};</textarea>
+            <iframe class = "typeBox" id="outputBox"></iframe>
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
